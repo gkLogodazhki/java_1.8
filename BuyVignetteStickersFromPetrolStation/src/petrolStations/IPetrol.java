@@ -1,4 +1,4 @@
-package interfaces;
+package petrolStations;
 
 import enums.Date;
 import person.Driver;

@@ -5,8 +5,7 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import enums.Date;
-import interfaces.IDriver;
-import interfaces.IPetrol;
+import petrolStations.IPetrol;
 import vehicles.Vehicle;
 
 public class Driver implements IDriver {

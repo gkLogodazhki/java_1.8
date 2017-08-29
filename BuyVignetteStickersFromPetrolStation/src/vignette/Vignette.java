@@ -4,7 +4,7 @@ import java.time.LocalDate;
 
 import enums.Color;
 import enums.Date;
-import interfaces.IVignette;
+import vignette.types.IVignette;
 
 public abstract class Vignette implements IVignette {
 

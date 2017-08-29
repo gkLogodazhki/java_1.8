@@ -12,8 +12,10 @@ import singleCase.Case;
 public class CriminalProceedings extends Case {
 
 	public static final int COUNT_JURORS = 13;
-	public CriminalProceedings(Judge judge,Defendant defendant,Prosecutor prosecutor,Set<Jurist> jurists,Set<Citizen> citizens) {
-		super(judge, COUNT_JURORS,defendant,prosecutor,jurists,citizens);
+
+	public CriminalProceedings(Judge judge, Defendant defendant, Prosecutor prosecutor, Set<Jurist> jurists,
+			Set<Citizen> citizens) {
+		super(judge, COUNT_JURORS, defendant, prosecutor, jurists, citizens);
 	}
 
 	@Override

@@ -1,4 +1,4 @@
-package demoPetrolStation;
+package petrolStations;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -8,10 +8,8 @@ import java.util.Random;
 
 import enums.Date;
 import enums.EnumVehicle;
-import interfaces.IDriver;
-import interfaces.IPetrol;
 import person.Driver;
-import petrolStations.Petrol;
+import person.IDriver;
 import vehicles.Vehicle;
 
 public class Demo {
@@ -54,7 +52,9 @@ public class Demo {
 		int count = 0;
 		System.out.println();
 		for (Vehicle v : vehicles) {
+
 			if ((v.getVignette() == null && v.getVehicleType().equals(vehicleType)) || v.getVehicleType().equals(vehicleType) && (v.getVignette().getSoldDate().toEpochDay() + v.getVignette().getDuration().getDays() < date.toEpochDay())) {
+
 				System.out.println(v.toString());
 				count++;
 			}

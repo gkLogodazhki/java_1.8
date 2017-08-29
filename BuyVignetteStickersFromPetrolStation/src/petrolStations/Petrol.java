@@ -4,11 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import enums.Date;
-import interfaces.IPetrol;
-import interfaces.IVignette;
 import person.Driver;
 import vehicles.Vehicle;
 import vignette.Vignette;
+import vignette.types.IVignette;
 import vignette.types.VignetteBus;
 import vignette.types.VignetteCar;
 import vignette.types.VignetteTruck;

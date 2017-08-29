@@ -13,5 +13,4 @@ public class Juror extends Jurist {
 		return "Juror " + super.toString();
 	}
 
-	
 }

@@ -1,18 +1,18 @@
- package lawyer.types;
+package lawyer.types;
 
 import lawyer.Jurist;
 
 public class Judge extends Jurist {
-
-	public Judge(String name, int countStaj, int countCases) {
-		super(name, (countStaj > 5 ) ? countStaj : 5, countCases);
-	}
 	
+	private static final int MINIMUM_COUNT_STAJ = 5;
+	
+	public Judge(String name, int countStaj, int countCases) {
+		super(name, (countStaj > MINIMUM_COUNT_STAJ) ? countStaj : MINIMUM_COUNT_STAJ, countCases);
+	}
+
 	@Override
 	public String toString() {
 		return "Judge " + super.toString();
 	}
 
-	
-	
 }

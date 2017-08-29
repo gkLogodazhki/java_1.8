@@ -4,6 +4,7 @@ import citizens.Person;
 
 public interface IJurist {
 
-	void askQuestion(Person person);
+	String askQuestion(Person person);
+
 	void proceedings();
 }

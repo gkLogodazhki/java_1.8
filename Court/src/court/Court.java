@@ -19,33 +19,33 @@ public class Court {
 		this.cases = new HashSet<>();
 	}
 
-	public void addJurist(Jurist jurist) {
-		this.jurists.add(jurist);
+	public void addJurists(Set<Jurist> jurists) {
+		this.jurists = jurists;
 	}
 
 	public void addCase(Case caseCourt) {
 		this.cases.add(caseCourt);
 	}
-
-	public Set<Jurist> getJurists() {
-		return this.jurists;
-	}
-
-	public Set<Case> getCases() {
-		return this.cases;
-	}
-
-	private StringBuilder printCourtInfo() {
-		StringBuilder sb = new StringBuilder("");
-		for (Jurist j : this.jurists) {
-			sb.append(j.toString() + "\n");
+	
+	public void performCases() {
+		for (Case c : this.cases) {
+			c.perform();
 		}
-		return sb;
+	}
+	
+	public void resultCases() {
+		for (Case c : this.cases) {
+			System.out.println(c);
+		}
 	}
 
 	@Override
 	public String toString() {
-		return "Court [name=" + name + ", address=" + address + "] , courtInfo:\n" + this.printCourtInfo();
+		StringBuilder sb = new StringBuilder("");
+		for (Jurist j : this.jurists) {
+			sb.append(j.toString() + "\n");
+		}
+		return "Court [name=" + name + ", address=" + address + "] , courtInfo:\n" + sb;
 	}
 
 }

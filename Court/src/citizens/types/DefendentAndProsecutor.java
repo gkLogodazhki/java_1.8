@@ -1,6 +1,5 @@
 package citizens.types;
 
-
 import java.util.Set;
 
 import citizens.Citizen;
@@ -14,22 +13,22 @@ public abstract class DefendentAndProsecutor extends Citizen {
 		super(name, address, age);
 		this.lawyers = lawyers;
 	}
-	
-	public Set<Lawyer> getLawyers(){
+
+	public Set<Lawyer> getLawyers() {
 		return this.lawyers;
 	}
 	
-	public StringBuilder sb() {
-		StringBuilder sb = new StringBuilder();
-		for (Lawyer l : this.lawyers) {
-			sb.append("\n" + l.toString());
-		}
-		return sb;
+	public void setLawyers(Set<Lawyer> lawyers) {
+		this.lawyers = lawyers;
 	}
 
 	@Override
 	public String toString() {
-		return super.toString() + sb();
+		StringBuilder sb = new StringBuilder();
+		for (Lawyer l : this.lawyers) {
+			sb.append("\n" + l.toString());
+		}
+		return super.toString() + sb;
 	}
 
 }

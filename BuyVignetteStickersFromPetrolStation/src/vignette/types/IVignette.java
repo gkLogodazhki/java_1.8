@@ -1,4 +1,4 @@
-package interfaces;
+package vignette.types;
 
 public interface IVignette {
 

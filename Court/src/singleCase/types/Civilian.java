@@ -11,13 +11,16 @@ import singleCase.Case;
 
 public class Civilian extends Case {
 
-	public Civilian(Judge judge,Defendant defendant,ProsecutorCitizen prosecutor,Set<Jurist> jurists,Set<Citizen> citizens) {
-		super(judge,3,defendant,prosecutor,jurists,citizens);
+	private static final int COUNT_JUROR = 3;
+
+	public Civilian(Judge judge, Defendant defendant, ProsecutorCitizen prosecutor, Set<Jurist> jurists,
+			Set<Citizen> citizens) {
+		super(judge, COUNT_JUROR, defendant, prosecutor, jurists, citizens);
 	}
 
 	@Override
 	public String toString() {
 		return "Civilian " + super.toString();
 	}
-	
+
 }

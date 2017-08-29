@@ -1,4 +1,4 @@
-package interfaces;
+package person;
 
 import java.time.LocalDate;
 

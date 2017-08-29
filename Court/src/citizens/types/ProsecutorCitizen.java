@@ -6,8 +6,8 @@ import lawyer.types.Lawyer;
 
 public class ProsecutorCitizen extends DefendentAndProsecutor {
 
-	public ProsecutorCitizen(String name, String address, int age, Set<Lawyer> lawyers ) {
-		super(name, address, age,lawyers);
+	public ProsecutorCitizen(String name, String address, int age, Set<Lawyer> lawyers) {
+		super(name, address, age, lawyers);
 	}
 
 	@Override

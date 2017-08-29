@@ -2,9 +2,8 @@ package vehicles;
 
 import enums.Date;
 import enums.EnumVehicle;
-import interfaces.IVehicle;
-import interfaces.IVignette;
 import vignette.Vignette;
+import vignette.types.IVignette;
 import vignette.types.VignetteBus;
 import vignette.types.VignetteCar;
 import vignette.types.VignetteTruck;

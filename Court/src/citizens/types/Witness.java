@@ -1,4 +1,4 @@
- package citizens.types;
+package citizens.types;
 
 import citizens.Citizen;
 
@@ -10,8 +10,7 @@ public class Witness extends Citizen {
 
 	@Override
 	public String toString() {
-		return "Witness "+ super.toString();
+		return "Witness " + super.toString();
 	}
 
-	
 }

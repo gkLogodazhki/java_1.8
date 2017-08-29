@@ -1,4 +1,4 @@
-package interfaces;
+package vehicles;
 
 public interface IVehicle {
 
